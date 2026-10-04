@@ -7,6 +7,7 @@
         <h3>{{ w.title || '（无标题）' }}</h3>
         <p>{{ w.note }}</p>
         <span class="tag">{{ w.status }} · {{ w.data_quality }}</span>
+        <span v-if="w.undoable" class="tag"> · 可撤销</span>
       </article>
     </div>
   </div>
